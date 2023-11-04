@@ -51,3 +51,5 @@ To perform this project, you will need the following:
 - Research papers from IEEE and Springer, which served as references for the project.
 - Sample EEG datasets obtained from Kaggle.
 - Datasets from IEEE research papers used for testing and analysis.
+- kaggle dataset link - https://www.kaggle.com/datasets/girgismicheal/steadystate-visual-evoked-potential-signals
+- MAMEM eeg dataset link - https://figshare.com/articles/dataset/MAMEM_EEG_SSVEP_Dataset_III_14_channels_11_subjects_5_frequencies_presented_simultaneously_/3413851?file=5344522
