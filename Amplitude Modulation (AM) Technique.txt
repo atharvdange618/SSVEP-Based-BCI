@@ -1,0 +1,19 @@
+Amplitude Modulation (AM) Technique for SSVEP Analysis:
+
+1. Steady-State Visually Evoked Potentials (SSVEPs):
+SSVEPs are electrical potentials in the brain that occur in response to visual stimuli presented at a constant frequency. When a person views a flickering visual stimulus (such as a flashing light) with a specific frequency, the brain generates electrical activity at that same frequency.
+
+2. Bandpass Filtering:
+The EEG data collected from electrodes on the scalp contains a wide range of frequencies, including the SSVEP frequencies of interest. The first step is to apply a bandpass filter to isolate the frequencies around the SSVEP frequencies. This helps in removing unwanted noise and focusing on the frequencies related to the visual stimuli.
+
+3. Hilbert Transform:
+The Hilbert transform is a mathematical operation applied to a signal. In this case, it's applied to the filtered EEG data. The result of the Hilbert transform is called the "analytic signal". The analytic signal provides information about both the amplitude and phase of the original signal.
+
+4. Envelope Calculation:
+From the analytic signal, we extract the amplitude, which represents the instantaneous strength or magnitude of the SSVEP signal over time. This amplitude is referred to as the "envelope" of the signal.
+
+5. Modulation Depth Calculation:
+The modulation depth is a measure of how much the amplitude of the SSVEP signal fluctuates over time. It is calculated as the standard deviation of the envelope divided by the mean of the envelope. This metric quantifies the variability in the strength of the SSVEP response.
+
+6. Interpretation and Applications:
+The modulation depth provides valuable information about the brain's response to visual stimuli at specific frequencies. Higher modulation depths indicate stronger and more consistent SSVEP responses. Researchers can use this information to study visual attention, cognitive processes, and develop brain-computer interfaces (BCIs) that utilize SSVEP signals.

@@ -1,0 +1,8 @@
+FFT Analysis Results (6-15 Hz):
+-----------------------------
+O1 Channel:
+Max Magnitude: 55.7324 at 9 Hz
+O2 Channel:
+Max Magnitude: 40.7639 at 9 Hz
+
+It seems that the highest magnitude in the 6-15 Hz frequency range for both channels (O1 and O2) occurs at 9 Hz. This indicates that, within the specified frequency range, the 9 Hz component has the highest amplitude.

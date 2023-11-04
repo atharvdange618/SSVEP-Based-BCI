@@ -1,0 +1,28 @@
+Individual fft analysis results
+
+
+Channel 1 - Magnitude at 7.55 Hz: 0.53028
+Channel 2 - Magnitude at 7.55 Hz: 0.38703
+Channel 3 - Magnitude at 7.55 Hz: 0.60509
+Channel 4 - Magnitude at 7.55 Hz: 0.60437
+Channel 5 - Magnitude at 7.55 Hz: 0.49424
+
+Channel 1 - Magnitude at 8.57 Hz: 0.36537
+Channel 2 - Magnitude at 8.57 Hz: 0.27519
+Channel 3 - Magnitude at 8.57 Hz: 0.21737
+Channel 4 - Magnitude at 8.57 Hz: 0.43909
+Channel 5 - Magnitude at 8.57 Hz: 0.3279
+
+Channel 1 - Magnitude at 12 Hz: 0.22243
+Channel 2 - Magnitude at 12 Hz: 0.45674
+Channel 3 - Magnitude at 12 Hz: 0.14878
+Channel 4 - Magnitude at 12 Hz: 0.34359
+Channel 5 - Magnitude at 12 Hz: 0.15335
+
+Channel 1 - Magnitude at 10 Hz: 1.0164
+Channel 2 - Magnitude at 10 Hz: 0.98567
+Channel 3 - Magnitude at 10 Hz: 1.2136
+Channel 4 - Magnitude at 10 Hz: 1.0545
+Channel 5 - Magnitude at 10 Hz: 0.95549
+
+sampling rate 50hz

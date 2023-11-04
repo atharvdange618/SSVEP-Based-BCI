@@ -1,0 +1,16 @@
+Time Domain Analysis Results:
+Signal Duration: 0.66667 seconds
+Frequency Domain Analysis Results:
+Max Magnitude: 67.5434 at 9 Hz
+
+The results you provided are from the time and frequency domain analyses:
+
+1. Time Domain Analysis:
+   - Signal Duration: 0.66667 seconds
+     - This means that the duration of the EEG signal you analyzed in the time domain is approximately 0.66667 seconds.
+
+2. Frequency Domain Analysis Results:
+   - Max Magnitude: 67.5434 at 9 Hz
+     - This indicates that the highest magnitude of the signal is observed at a frequency of 9 Hz in the frequency domain. This means that there is a significant signal component at 9 Hz in the EEG data.
+
+Overall, these results give you insights into the temporal and spectral characteristics of the EEG signal. The highest magnitude at 9 Hz suggests that there may be a prominent oscillation at this frequency in the EEG data.

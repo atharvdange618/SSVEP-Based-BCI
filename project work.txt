@@ -1,0 +1,39 @@
+sampling rate: 128hz
+
+notch filter to remove power line interference (50-60hz)
+
+bandpass filter to isolate frequency range of interest(6-15hz)
+
+Independent Component Analysis (ICA) to eliminate noise from the signals
+
+feature extraction techniques:
+Spectral Power:
+Compute the power spectral density (PSD) in the frequency domain using methods like the Fast Fourier Transform (FFT) or the Welch method. Extract the power at specific frequency bins corresponding to the stimulus frequencies (e.g., 6, 8, 10, 12, 15 Hz).
+
+Frequency Domain Features:
+Extract spectral features such as peak power, peak frequency, and spectral centroid at the SSVEP frequencies. These features can help identify the presence of SSVEPs.
+
+Amplitude Modulation:
+Analyze the modulation depth of the SSVEP signal at the stimulus frequency. Higher modulation depth indicates a stronger SSVEP response.
+
+Fast Fourier Transform or the Welch method both allow you to transform a time-domain signal into the frequency domain, revealing the amplitudes and phases of different frequency components within the signal.
+
+Modulation Depths (SSVEP Frequencies):
+    0.2044
+    0.2439
+    0.3578
+    0.1438
+
+FFT Analysis Results (6-15 Hz):
+-----------------------------
+O1 Channel:
+Max Magnitude: 55.7324 at 9 Hz
+O2 Channel:
+Max Magnitude: 40.7639 at 9 Hz
+
+Spectral Features (SSVEP Frequencies):
+Frequency (Hz)   Peak Power (dB/Hz)   Peak Frequency (Hz)   Spectral Centroid (Hz)
+   10.0000   35.6476   10.0312    8.1604
+    8.5700    9.8333    8.5312    8.8828
+   12.0000    4.2227   12.0000   11.3501
+    7.5000    8.6337    7.5000    7.4399

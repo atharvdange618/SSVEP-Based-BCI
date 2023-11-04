@@ -1,0 +1,29 @@
+mean and variance analysis
+
+12hz
+Mean after preprocessing: 1.3813      1.3796      1.3825       1.384      1.3705
+Variance after preprocessing: 4113.5129      4111.0596      4140.0061      4147.9014      4096.9819
+
+8.57hz
+Mean after preprocessing: 1.3731      1.3786      1.3735      1.3728      1.3761
+Variance after preprocessing: 4103.9634      4127.9888      4118.5472      4109.2355      4104.7448
+
+7.55hz
+Mean after preprocessing: 1.3783      1.3756      1.3757      1.3751      1.3718
+Variance after preprocessing: 4150.0328      4138.5355      4159.7515      4142.6765      4108.2383
+
+10hz
+Mean after preprocessing: 1.3668      1.3698      1.3635      1.3619      1.3537
+Variance after preprocessing: 4050.8538      4050.1723      4029.3368      4029.5999 
+
+
+Frequency: 8.57Hz
+It consistently shows relatively high modulation depths across different channels.
+
+Frequency: 7.55Hz
+It also shows relatively high modulation depths across different channels.
+
+Frequency: 12Hz
+While it has lower modulation depths compared to 8.57Hz and 7.55Hz, it still shows a reasonable response.
+
+sampling rate 50hz
