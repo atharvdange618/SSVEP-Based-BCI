@@ -16,6 +16,8 @@ The report navigates through the fundamental principles of SSVEP, the design and
 
 ## Block Diagram Description
 
+![Brain-Computer Interface](block_diagram.png)
+
 ### Acquisition
 
 This initial block involves the gathering of brain signals using electroencephalography (EEG). EEG electrodes are placed on the scalp to capture the brain's electrical activity. The acquisition stage involves the sampling and recording of SSVEP signals in response to visual stimuli presented to the user.
@@ -41,6 +43,8 @@ To perform this project, you will need the following:
 - An EEG machine for signal acquisition.
 - EEG data acquisition software, such as BT Traveler Acquisition and BT Traveler Analysis applications.
 - MATLAB for signal processing, feature extraction, and classification.
+
+![EEG Machine](eeg_machine.png)
 
 ## Resources
 
