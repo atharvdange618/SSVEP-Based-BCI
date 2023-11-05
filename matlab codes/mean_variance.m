@@ -1,44 +1,36 @@
+% Load your EEG data from the CSV file
 eegData = readmatrix('U0000aii.csv');
 
-% Define your sampling rate.
+% Define your sampling rate and the number of samples in one trial.
 samplingRate = 128; % Hz
+numSamples = 7041;
 
-% Define the frequency ranges of interest.
-freqRanges = [10.00; 8.57; 7.50; 12.00]; % Hz
+% Define the frequency range of interest.
+freqOfInterest = [10, 12, 7.50, 8.57]; % Hz
 
-% Initialize arrays to store mean and variance values for each frequency range.
-numFreqRanges = length(freqRanges);
-meanValues = zeros(numFreqRanges, 14); % 14 represents the number of electrode locations
-varianceValues = zeros(numFreqRanges, 14);
+% Initialize arrays to store mean and variance values for each frequency
+meanValues = zeros(1, length(freqOfInterest));
+varianceValues = zeros(1, length(freqOfInterest));
 
-% Loop through each frequency range.
-for freqIdx = 1:numFreqRanges
-    targetFrequency = freqRanges(freqIdx);
-
-    % Loop through each electrode location.
-    for electrode = 1:14
-        eegData = your_data(electrode, :); % Replace 'your_data' with the actual data for the electrode
-
-        % Apply a bandpass filter to isolate the specific frequency range.
-        freqRange = [targetFrequency - 0.5, targetFrequency + 0.5]; % Adjust the bandwidth as needed
-        bpFilt = designfilt('bandpassiir', 'FilterOrder', 10, 'HalfPowerFrequency1', freqRange(1), 'HalfPowerFrequency2', freqRange(2), 'SampleRate', samplingRate);
-        filteredData = filtfilt(bpFilt, eegData);
-
-        % Calculate the mean and variance for the filtered data.
-        meanValue = mean(filteredData);
-        varianceValue = var(filteredData);
-
-        % Store the results in the arrays.
-        meanValues(freqIdx, electrode) = meanValue;
-        varianceValues(freqIdx, electrode) = varianceValue;
-    end
+% Calculate mean and variance for each frequency of interest
+for i = 1:length(freqOfInterest)
+    targetFrequency = freqOfInterest(i);
+    
+    % Extract the relevant data for the target frequency
+    % You may need to adjust the indices based on your data
+    startIndex = 1;
+    endIndex = numSamples;  % Assuming you want to analyze the entire data
+    
+    % Apply bandpass filter to extract the frequency of interest
+    filteredData = bandpass(eegData(startIndex:endIndex), [targetFrequency - 0.5, targetFrequency + 0.5], samplingRate);
+    
+    % Calculate mean and variance
+    meanValues(i) = mean(filteredData);
+    varianceValues(i) = var(filteredData);
 end
 
-% Display the results in a tabular format.
-fprintf('Frequency (Hz)\tElectrode\tMean\tVariance\n');
-for freqIdx = 1:numFreqRanges
-    targetFrequency = freqRanges(freqIdx);
-    for electrode = 1:14
-        fprintf('%.2f\tElectrode %d\t%.2f\t%.2f\n', targetFrequency, electrode, meanValues(freqIdx, electrode), varianceValues(freqIdx, electrode));
-    end
+% Display the mean and variance values in a table format
+fprintf('Frequency (Hz)   Mean   Variance\n');
+for i = 1:length(freqOfInterest)
+    fprintf('%.2f           %.4f      %.4f\n', freqOfInterest(i), meanValues(i), varianceValues(i));
 end

@@ -5,7 +5,7 @@ samplingRate = 128; % Hz
 numSamples = size(eegData, 1);
 
 % Define the frequency range of interest.
-freqOfInterest = [7, 12]; % Hz (Your specified frequency range)
+freqOfInterest = [7.5, 12]; % Hz (Your specified frequency range)
 
 % Calculate the FFT of the EEG data.
 fftData = fft(eegData, numSamples);
@@ -47,3 +47,11 @@ topThreeFrequencies = sortedFrequencies(1:3);
 fprintf('Top Three Frequencies: ');
 fprintf('%.2f Hz, ', topThreeFrequencies);
 fprintf('\n');
+
+% Create a bar plot for the top three frequencies
+figure;
+bar(topThreeFrequencies, sortedCount(1:3));
+title('Top Three Dominant Frequencies');
+xlabel('Frequency (Hz)');
+ylabel('Magnitude');
+grid on;

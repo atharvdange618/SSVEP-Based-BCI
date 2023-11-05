@@ -1,3 +1,4 @@
+% Load EEG data from your CSV file (replace 'your_file.csv' with the actual filename)
 eegData = readmatrix('U0000aii.csv');
 
 % Define your sampling rate and the number of samples in one trial.
@@ -28,6 +29,21 @@ for i = 1:length(freqOfInterest)
     phaseFeatures(i) = angle(fft_result(idx));
 end
 
+% Plot magnitude features
+subplot(2, 1, 1);
+bar(freqOfInterest, magnitudeFeatures);
+title('Magnitude Features');
+xlabel('Frequency (Hz)');
+ylabel('Magnitude');
+
+% Plot phase features
+subplot(2, 1, 2);
+bar(freqOfInterest, phaseFeatures);
+title('Phase Features');
+xlabel('Frequency (Hz)');
+ylabel('Phase (radians)');
+
+% Display magnitude and phase features
 fprintf('Magnitude Features:\n');
 for i = 1:length(magnitudeFeatures)
     fprintf('Frequency %d Hz Magnitude: %.2f\n', freqOfInterest(i), magnitudeFeatures(i));
