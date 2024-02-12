@@ -54,25 +54,25 @@ void main() {
 }
 
 
-how the frequencies were determined:
+// how the frequencies were determined:
 
-10 Hz (FREQ1_PERIOD = 100 ms):
-Frequency: 10 Hz means there are 10 cycles in one second.
-To find the period in milliseconds, you take the reciprocal of the frequency:
-Period (in seconds) = 1 / Frequency = 1 / 10 = 0.1 seconds
-Convert seconds to milliseconds: 0.1 seconds * 1000 = 100 milliseconds
-Therefore, the period for a 10 Hz square wave is 100 milliseconds.
+// 10 Hz (FREQ1_PERIOD = 100 ms):
+// Frequency: 10 Hz means there are 10 cycles in one second.
+// To find the period in milliseconds, you take the reciprocal of the frequency:
+// Period (in seconds) = 1 / Frequency = 1 / 10 = 0.1 seconds
+// Convert seconds to milliseconds: 0.1 seconds * 1000 = 100 milliseconds
+// Therefore, the period for a 10 Hz square wave is 100 milliseconds.
 
-8.57 Hz (FREQ2_PERIOD = 117 ms):
-Frequency: 8.57 Hz means there are 8.57 cycles in one second.
-To find the period in milliseconds:
-Period (in seconds) = 1 / Frequency = 1 / 8.57 ≈ 0.1167 seconds
-Convert seconds to milliseconds: 0.1167 seconds * 1000 ≈ 117 milliseconds
-Therefore, the period for an 8.57 Hz square wave is approximately 117 milliseconds.
+// 8.57 Hz (FREQ2_PERIOD = 117 ms):
+// Frequency: 8.57 Hz means there are 8.57 cycles in one second.
+// To find the period in milliseconds:
+// Period (in seconds) = 1 / Frequency = 1 / 8.57 ≈ 0.1167 seconds
+// Convert seconds to milliseconds: 0.1167 seconds * 1000 ≈ 117 milliseconds
+// Therefore, the period for an 8.57 Hz square wave is approximately 117 milliseconds.
 
-12 Hz (FREQ3_PERIOD = 83 ms):
-Frequency: 12 Hz means there are 12 cycles in one second.
-To find the period in milliseconds:
-Period (in seconds) = 1 / Frequency = 1 / 12 ≈ 0.0833 seconds
-Convert seconds to milliseconds: 0.0833 seconds * 1000 ≈ 83 milliseconds
-Therefore, the period for a 12 Hz square wave is approximately 83 milliseconds.
+// 12 Hz (FREQ3_PERIOD = 83 ms):
+// Frequency: 12 Hz means there are 12 cycles in one second.
+// To find the period in milliseconds:
+// Period (in seconds) = 1 / Frequency = 1 / 12 ≈ 0.0833 seconds
+// Convert seconds to milliseconds: 0.0833 seconds * 1000 ≈ 83 milliseconds
+// Therefore, the period for a 12 Hz square wave is approximately 83 milliseconds.
